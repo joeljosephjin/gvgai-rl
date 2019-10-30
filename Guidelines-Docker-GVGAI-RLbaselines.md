@@ -141,7 +141,7 @@ docker run --runtime=nvidia -v $PWD:/home --name <container_name> -it <image_nam
 
 ## Other commands
 
-* Exist an running container: `CTRL + D`
+* Exit a running container: `CTRL + D`
 
 * Load an existing container:
 ```
