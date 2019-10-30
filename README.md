@@ -1,4 +1,4 @@
-This project is used for the **[Generic Video Game Competition (GVGAI)](http://www.gvgai.net/) Learning Competition**. For more about the competition legs, rules and rank, please visite the [AI in Games website](http://www.aingames.cn/), maintained by [Hao Tong](https://github.com/HawkTom) and [Jialin Liu](https://github.com/ljialin). 
+This project is used for the **[Generic Video Game Competition (GVGAI)](http://www.gvgai.net/) Learning Competition** from the year 2019. For more about the competition legs, rules and rank, please visite the [AI in Games website](http://www.aingames.cn/), maintained by [Hao Tong](https://github.com/HawkTom) and [Jialin Liu](https://github.com/ljialin). 
 
 # Disclamer
 
