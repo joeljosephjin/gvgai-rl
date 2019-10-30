@@ -132,20 +132,31 @@ docker build . -t <image_name>
 ## 5. Run container from image
 **CPU only**
 ```
-docker run -v $PWD:/home -it <image_name> /bin/bash
+docker run -v $PWD:/home --name <container_name> -it <image_name> /bin/bash
 ```
 **For GPU users**
 ```
-docker run --runtime=nvidia -v $PWD:/home -it <image_name> /bin/bash
+docker run --runtime=nvidia -v $PWD:/home --name <container_name> -it <image_name> /bin/bash
 ```
 
 ## Other commands
+
+* Exist an running container: `CTRL + D`
+
 * Load an existing container:
 ```
-docker start <image_name>
+docker start <container_name>
 ```
 
+* Run your docker in the background
+add `-d` before `-it` 
 
+* Enter into a container running in the background
+```
+docker exec -it <contanier_name> /bin/sh
+```
+
+**More docker commands refer to the [official tutorial](https://docs.docker.com/engine/reference/commandline/cli/) **
 
 ### References
 
