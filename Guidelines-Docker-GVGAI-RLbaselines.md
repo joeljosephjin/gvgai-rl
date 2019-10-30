@@ -31,7 +31,7 @@ FROM ubuntu:16.04
 # You can replace ``jdk-9.tar.gz'' by the one that you have downloaded
 ADD jdk-9.tar.gz /usr/local
 
-RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1 bzip2
+RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1
 
 WORKDIR /package
 
@@ -83,7 +83,7 @@ FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 # You can replace ``jdk-9.tar.gz'' by the one that you have downloaded
 ADD jdk-9.tar.gz /usr/local
 
-RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1 bzip2
+RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1
 
 WORKDIR /package
 
