@@ -139,6 +139,14 @@ docker run -v $PWD:/home -it <image_name> /bin/bash
 docker run --runtime=nvidia -v $PWD:/home -it <image_name> /bin/bash
 ```
 
+## Other commands
+* Load an existing container:
+```
+docker start <image_name>
+```
+
+
+
 ### References
 
 1. [G. Brockman, V. Cheung, L. Pettersson, J. Schneider, J. Schulman, J. Tang, and W. Zaremba, “Openai gym,” 2016.](https://github.com/openai/gym)
