@@ -5,7 +5,7 @@ Step-by-step instructions written by [Hao Tong](https://github.com/HawkTom).
 
 ## 2. Download required packages
 
-- Anaconda [link](https://www.anaconda.com/distribution/)  [清华镜像(2019年10月之后发布的) (TsingHua Mirror)](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/) The anaconda publised after 2019.10 is recommended. 
+- Anaconda [link](https://www.anaconda.com/distribution/)  [清华镜像 (TsingHua Mirror)](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)(2019年10月之后发布的) The anaconda published after 2019.10 is recommended. 
 - Java [link](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html): jdk-9 is recommended 
 
 **Only For GPU users**
