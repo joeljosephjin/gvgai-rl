@@ -8,7 +8,8 @@ Step-by-step instructions written by [Hao Tong](https://github.com/HawkTom).
 - Anaconda [link](https://www.anaconda.com/distribution/)  [清华镜像 (TsingHua Image)](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)：Anaconda3-5 is recommended
 - Java [link](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html): jdk-9 is recommended 
 
-### Only For GPU users
+**Only For GPU users**
+
 If you have GPU in your machine, you can use GPU to speed up the learning process. Before doing, you will need to:
 
 * install NAVIDA driver on your machine
@@ -129,11 +130,11 @@ docker build . -t <image_name>
 ```
 
 ## 5. Run container from image
-If using CPU only:
+**CPU only**
 ```
 docker run -v $PWD:/home --rm -it <image_name> /bin/bash
 ```
-If using GPU:
+**For GPU users**
 ```
 docker run --runtime=nvidia -v $PWD:/home --rm -it <image_name> /bin/bash
 ```
