@@ -20,10 +20,8 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 # Installation
 
 ## Way 1: using Docker
-### CPU only
-Please refer to the file ``[Guidelines-Docker-GVGAI-RLbaselines.md](https://github.com/HawkTom/Notes/blob/master/Guidelines-Docker-GVGAI-RLbaselines.md)`` for setting up the framework and RL baselines using Docker.
-### GPU
-Please refer to the file ``[Guidelines-Docker-GVGAI-RLbaselines-GPU.md](https://github.com/HawkTom/Notes/blob/master/Guidelines-Docker-GVGAI-RLbaselines-GPU.md)`` for setting up the framework and RL baselines using Docker.
+
+Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/Guidelines-Docker-GVGAI-RLbaselines.md) for setting up the framework and RL baselines with Docker (using GPU or CPU only).
 
 ## Way 2: 
 Install GVGAI GYM following the instructions provided by the [original GVGAI GYM project](https://github.com/rubenrtorrado/GVGAI_GYM).
