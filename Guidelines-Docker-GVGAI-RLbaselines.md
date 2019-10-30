@@ -15,7 +15,7 @@ If you have GPU in your machine, you can use GPU to speed up the learning proces
 
 * install the docker on your machine
 
-* nstall NAVIDA docker (It is simply a plugin to Docker to support GPU using in container)
+* install NAVIDA docker (It is simply a plugin to Docker to support GPU using in container)
 
 The above three step can be refer to the existing blog by Trung Tran: [Installing NVIDIA Docker On Ubuntu 16.04](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/)
 
@@ -118,14 +118,24 @@ CMD /bin/bash
 *Remark: anaconda.sh jdk.tar.gz and Dockerfile should be in the same folder*!
 
 
-## 5. Build your image
+## 4. Build your image
 Now you should have the following files in the same repository:
 * jdk-9.tar.gz
 * anaconda.sh
 * Dockfile
 Try the follwing command line in the repository:
 ```
-docker build . -t <tag_name>
+docker build . -t <image_name>
+```
+
+## 5. Run container from image
+If using CPU only:
+```
+docker run -v $PWD:/home --rm -it <image_name> /bin/bash
+```
+If using GPU:
+```
+docker run --runtime=nvidia -v $PWD:/home --rm -it <image_name> /bin/bash
 ```
 
 ### References
