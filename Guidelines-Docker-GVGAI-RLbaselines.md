@@ -9,15 +9,15 @@ Step-by-step instructions written by [Hao Tong](https://github.com/HawkTom).
 - Java [link](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html): jdk-9 is recommended 
 
 ### Only For GPU users
-If you have GPU in your machine, you can use GPU to speed up the learning process. 
+If you have GPU in your machine, you can use GPU to speed up the learning process. Before doing, you will need to:
 
-**(1) Install NAVIDA driver on your machine**
+* install NAVIDA driver on your machine
 
-**(2) Install the docker on your machie**
+* install the docker on your machie
 
-**(3) Install NAVIDA docker** (It is simply a plugin to Docker to support GPU using in container)
+* nstall NAVIDA docker (It is simply a plugin to Docker to support GPU using in container)
 
-*(PS: The above three step can be refer to the existing blog. [link](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/))*
+The above three step can be refer to the existing blog. [link](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/))
 
 ## 3. Dockerfile  (modified from the rl_baseline repository)
 
