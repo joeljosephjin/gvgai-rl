@@ -6,15 +6,18 @@ Author: [Hao Tong](https://github.com/HawkTom)
 
 **2. Download required package**
 
-- Anaconda [link](https://www.anaconda.com/distribution/)  [清华镜像 (TsingHua Image)](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
-- Java [link](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html): jdk-9 is suggested 
+- Anaconda [link](https://www.anaconda.com/distribution/)  [清华镜像 (TsingHua Image)](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)：Anaconda3-5 is recommended
+- Java [link](https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html): jdk-9 is recommended 
 
 **3. Dockerfile**  (modified from the rl_baseline repository)
+
+### CPU only
 
 ```dockerfile
 FROM ubuntu:16.04
 
 # Download jdk-9 from  https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html
+# You can replace ``jdk-9.tar.gz'' by the one that you have downloaded
 ADD jdk-9.tar.gz /usr/local
 
 RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1
@@ -22,6 +25,7 @@ RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cm
 WORKDIR /package
 
 # Download Anaconda from https://www.anaconda.com/distribution/ 
+# You can replace ``anaconda.sh'' by the installation script that you have downloaded, e.g., ``Anaconda3-5.3.1-Linux-x86_64.sh''
 COPY anaconda.sh /package
 RUN bash anaconda.sh -b -p /opt/conda && \
     rm -rf anaconda.sh
@@ -81,6 +85,7 @@ If you have GPU in your machine, you can use GPU to speed up the learning proces
 FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
 # Download jdk-9 from  https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html
+# You can replace ``jdk-9.tar.gz'' by the one that you have downloaded
 ADD jdk-9.tar.gz /usr/local
 
 RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1
@@ -88,6 +93,7 @@ RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cm
 WORKDIR /package
 
 # Download Anaconda from https://www.anaconda.com/distribution/ 
+# You can replace ``anaconda.sh'' by the installation script that you have downloaded, e.g., ``Anaconda3-5.3.1-Linux-x86_64.sh''
 COPY anaconda.sh /package
 RUN bash anaconda.sh -b -p /opt/conda && \
     rm -rf anaconda.sh
