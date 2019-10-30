@@ -132,11 +132,11 @@ docker build . -t <image_name>
 ## 5. Run container from image
 **CPU only**
 ```
-docker run -v $PWD:/home --rm -it <image_name> /bin/bash
+docker run -v $PWD:/home -it <image_name> /bin/bash
 ```
 **For GPU users**
 ```
-docker run --runtime=nvidia -v $PWD:/home --rm -it <image_name> /bin/bash
+docker run --runtime=nvidia -v $PWD:/home -it <image_name> /bin/bash
 ```
 
 ### References
