@@ -16,6 +16,9 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 }
 ```
 
+# News
+## GVGAI Learning Competition in 2019
+TBU
 
 # Installation
 
