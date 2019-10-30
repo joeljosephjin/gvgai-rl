@@ -156,7 +156,7 @@ add `-d` before `-it`
 docker exec -it <contanier_name> /bin/sh
 ```
 
-**More docker commands refer to the [official tutorial](https://docs.docker.com/engine/reference/commandline/cli/) **
+**More docker commands refer to the [official tutorial](https://docs.docker.com/engine/reference/commandline/cli/)**
 
 ### References
 
