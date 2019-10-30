@@ -13,11 +13,11 @@ If you have GPU in your machine, you can use GPU to speed up the learning proces
 
 * install NAVIDA driver on your machine
 
-* install the docker on your machie
+* install the docker on your machine
 
 * nstall NAVIDA docker (It is simply a plugin to Docker to support GPU using in container)
 
-The above three step can be refer to the existing blog. [link](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/))
+The above three step can be refer to the existing blog by Trung Tran: [Installing NVIDIA Docker On Ubuntu 16.04](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/)
 
 ## 3. Dockerfile  (modified from the rl_baseline repository)
 
