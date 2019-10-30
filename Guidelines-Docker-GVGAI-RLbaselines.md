@@ -139,6 +139,14 @@ docker run -v $PWD:/home --rm -it <image_name> /bin/bash
 docker run --runtime=nvidia -v $PWD:/home --rm -it <image_name> /bin/bash
 ```
 
+### FAQs
+* Why I saw the warning message *WARNING: bzip2 does not appear to be installed this may cause problems below
+* when building my image?
+You will need to add bzip2 to the list of packages to install, as follows:
+```
+RUN apt-get -y update && apt-get -y install vim git libopenmpi-dev zlib1g-dev cmake libglib2.0-0 libsm6 libxext6 libfontconfig1 libxrender1 bzip2
+```
+
 ### References
 
 1. [G. Brockman, V. Cheung, L. Pettersson, J. Schneider, J. Schulman, J. Tang, and W. Zaremba, “Openai gym,” 2016.](https://github.com/openai/gym)
