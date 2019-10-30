@@ -4,8 +4,7 @@ This project is used for the **[Generic Video Game Competition (GVGAI)](http://w
 
 This project is forked from [GVGAI Gym](https://github.com/rubenrtorrado/GVGAI_GYM), which is an [OpenAI Gym](gym.openai.com) environment for games written in the [Video Game Description Language (VGDL)](http://www.gvgai.net/vgdl.php), including the GVGAI framework. 
 
-Please refer to the following paper for more about the GVGAI Gym framework and some initial results of Reinforcement Learning (RL) agents:
-[Deep Reinforcement Learning for General Video Game AI](https://arxiv.org/abs/1806.02448). This paper should be cited if code from this project or the [original GVGAI GYM project](https://github.com/rubenrtorrado/GVGAI_GYM) is used in any way:
+Please refer to the paper [Deep Reinforcement Learning for General Video Game AI](https://arxiv.org/abs/1806.02448) for more about the GVGAI GYM framework and some initial results of Reinforcement Learning (RL) agents. This paper should be cited if code from this project or the [original GVGAI GYM project](https://github.com/rubenrtorrado/GVGAI_GYM) is used in any way:
 
 ```
 @inproceedings{torrado2018deep,
