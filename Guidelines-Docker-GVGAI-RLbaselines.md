@@ -124,6 +124,7 @@ Now you should have the following files in the same repository:
 * jdk-9.tar.gz
 * anaconda.sh
 * Dockfile
+
 Try the follwing command line in the repository:
 ```
 docker build . -t <image_name>
