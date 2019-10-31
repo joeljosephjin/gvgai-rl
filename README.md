@@ -43,7 +43,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/SUSTec
 
 [AI in Games website for more about competition updates](http://www.aingames.cn/#sources)
 
-[*Deep Reinforcement Learning for General Video Game AI* published at IEEE CIG2018](https://arxiv.org/abs/1806.02448)
+[*Deep Reinforcement Learning for General Video Game AI*](https://arxiv.org/abs/1806.02448)published at IEEE CIG2018
 
 # References
 
