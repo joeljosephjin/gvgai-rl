@@ -1,4 +1,4 @@
-def gvgaiEnv():
+def test_gvgaiENV():
     try: 
         import gym
         import gym_gvgai
@@ -7,9 +7,5 @@ def gvgaiEnv():
         action_id = env.action_space.sample()
         env.step(action_id)
         return True
-    except Exception:
-        return False
-
-
-def test_gvgaiENV():
-    assert gvgaiEnv() == True
+    except Exception as er:
+        assert False, er

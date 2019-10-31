@@ -1,4 +1,4 @@
-def beselineEnv():
+def test_baselineEnv():
     try:
         import gym
         from stable_baselines.common.vec_env import DummyVecEnv
@@ -12,9 +12,6 @@ def beselineEnv():
         action, _ = model.predict(env.reset())
         env.step(action)
         return True
-    except:
-        return False
+    except Exception as er:
+        assert False, er
 
-
-def test_baselineEnv():
-    assert beselineEnv() == True
