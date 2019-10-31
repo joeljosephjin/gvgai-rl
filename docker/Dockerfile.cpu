@@ -20,7 +20,7 @@ ENV CLASSPATH=.:$JAVA_HOME/lib:$CLASSPATH
 ENV PATH=$JAVA_HOME/bin:$PATH
 ENV PATH=/opt/conda/bin:$PATH
 
-RUN git clone https://github.com/rubenrtorrado/GVGAI_GYM.git
+RUN git clone https://github.com/SUSTechGameAI/GVGAI_GYM.git
 
 # The rl-baseline required ternsorflow version to be from 1.8.0 to 1.14.0
 RUN pip install -e GVGAI_GYM/ && \
