@@ -24,7 +24,7 @@ TBU
 
 ## Way 1: using Docker
 
-Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/Guidelines-Docker-GVGAI-RLbaselines.md) for setting up the framework and RL baselines with Docker (using GPU or CPU only).
+Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docs/Guidelines-Docker-GVGAI-RLbaselines.md) for setting up the framework and RL baselines with Docker (using GPU or CPU only).
 
 ## Way 2: 
 Install GVGAI GYM following the instructions provided by the [original GVGAI GYM project](https://github.com/rubenrtorrado/GVGAI_GYM).
