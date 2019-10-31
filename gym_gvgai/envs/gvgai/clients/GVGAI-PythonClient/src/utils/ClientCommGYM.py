@@ -6,7 +6,7 @@ import random
 import tempfile
 import shutil
 
-from scipy import misc
+import imageio
 
 import subprocess
 import argparse
@@ -94,7 +94,7 @@ class ClientCommGYM:
             score=0
         
         if self.sso.isGameOver==True or self.sso.gameWinner=='PLAYER_WINS' or self.sso.phase == "FINISH" or self.sso.phase=="ABORT" or self.sso.phase=="End":
-            self.sso.image = misc.imread(os.path.join(self.tempDir.name, 'gameStateByBytes.png'))
+            self.sso.image = imageio.imread(os.path.join(self.tempDir.name, 'gameStateByBytes.png'))
             self.sso.Terminal=True
             #self.lastScore=0
             #Score = self.lastScore
@@ -173,7 +173,7 @@ class ClientCommGYM:
 
                 if(self.sso.isGameOver==True or self.sso.gameWinner=='WINNER' or self.sso.phase == "FINISH" or self.sso.phase == "End"):
                     
-                    self.sso.image = misc.imread(os.path.join(self.tempDir.name, 'gameStateByBytes.png'))
+                    self.sso.image = imageio.imread(os.path.join(self.tempDir.name, 'gameStateByBytes.png'))
                     self.sso.Terminal=True
                     self.lastScore=0
                 else:
@@ -302,7 +302,7 @@ class ClientCommGYM:
                         or self.lastSsoType == LEARNING_SSO_TYPE.BOTH or self.lastSsoType == "BOTH"):
                     if(self.sso.imageArray):
                         self.sso.convertBytesToPng(self.sso.imageArray, self.tempDir.name)
-                        self.sso.image = misc.imread(os.path.join(self.tempDir.name, 'gameStateByBytes.png'))
+                        self.sso.image = imageio.imread(os.path.join(self.tempDir.name, 'gameStateByBytes.png'))
 
         except Exception as e:
             logging.exception(e)
