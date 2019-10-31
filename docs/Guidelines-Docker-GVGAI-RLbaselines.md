@@ -22,7 +22,7 @@ The above three step can be refer to the existing blog by Trung Tran: [Installin
 
 ## 3. Dockerfile  (modified from the rl_baseline repository)
 
-### CPU only [Download Dockerfile](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docker/Dockerfile.cpu)
+### CPU only ([download Dockerfile](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docker/Dockerfile.cpu))
 
 ```dockerfile
 FROM ubuntu:16.04
@@ -63,7 +63,7 @@ RUN pip install -e GVGAI_GYM/ && \
 CMD /bin/bash
 ```
 
-### GPU version [Download Dockerfile](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docker/Dockerfile.gpu)
+### GPU version ([download Dockerfile](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docker/Dockerfile.gpu))
 - In the dockerfile, use `FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04` instead of `From Ubuntu:16.04`. 
 
 - The version of TensorFlow and Pytorch should be GPU version.
