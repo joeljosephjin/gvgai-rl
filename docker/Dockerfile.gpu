@@ -27,7 +27,6 @@ RUN pip install -e GVGAI_GYM/ && \
     pip install codacy-coverage && \
     pip install mpi4py && \
     pip install tensorflow-gpu==1.14 && \
-    pip install scipy==1.1.0 && \
     pip install cloudpickle && \
     pip install stable-baselines[mpi]
 
