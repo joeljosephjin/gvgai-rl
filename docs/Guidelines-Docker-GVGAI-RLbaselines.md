@@ -128,15 +128,30 @@ Try the follwing command line in the repository:
 docker build . -t <image_name>
 ```
 
-## 5. Run container from image
+## 5. Testing the installation
+
+   - Use `docker ps` to check whether your image exist or not.
+   - Tests the environment by using pytest runner:
+     - CPU version: 
+  
+        `docker run -w /package/GVGAI_GYM --rm <image_name> pytest`
+
+     - GPU version: 
+        
+        `docker run --runtime=nvidia -w /app/GVGAI_GYM --rm <image_name> pytest && nvidia-smi`
+
+
+## 6. Run container from image
 **CPU only**
 ```
-docker run -v $PWD:/home --name <container_name> -it <image_name> /bin/bash
+docker run -v $PWD:/home -w /home --name <container_name> -it <image_name> /bin/bash
 ```
 **For GPU users**
 ```
-docker run --runtime=nvidia -v $PWD:/home --name <container_name> -it <image_name> /bin/bash
+docker run --runtime=nvidia -v $PWD:/home -w /home --name <container_name> -it <image_name> /bin/bash
 ```
+
+*ps: The `-v` flag mounts the current working directory into the container.*
 
 ## Other commands
 
