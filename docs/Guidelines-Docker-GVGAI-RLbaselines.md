@@ -138,7 +138,7 @@ docker build . -t <image_name>
 
      - GPU version: 
         
-        `docker run --runtime=nvidia -w /app/GVGAI_GYM --rm <image_name> pytest && nvidia-smi`
+        `docker run --runtime=nvidia -w /app/GVGAI_GYM --rm <image_name> pytest`
 
 
 ## 6. Run container from image
