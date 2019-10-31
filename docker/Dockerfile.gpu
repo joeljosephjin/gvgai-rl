@@ -1,3 +1,4 @@
+# Author: Hao Tong (https://github.com/HawkTom)
 FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
 
 # Download jdk-9 from  https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase9-3934878.html
