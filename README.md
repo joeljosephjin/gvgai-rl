@@ -16,17 +16,16 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 }
 ```
 
-# News
-## GVGAI Learning Competition in 2019
+# GVGAI Learning Competition in 2019
 TBU
 
 # Installation
 
-## Way 1: using Docker
+**Way 1: using Docker**
 
 Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docs/Guidelines-Docker-GVGAI-RLbaselines.md) for setting up the framework and RL baselines with Docker (using GPU or CPU only).
 
-## Way 2: 
+**Way 2:** 
 Install GVGAI GYM following the instructions provided by the [original GVGAI GYM project](https://github.com/rubenrtorrado/GVGAI_GYM).
 
 # Contributing
@@ -43,7 +42,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/SUSTec
 
 [AI in Games website for more about competition updates](http://www.aingames.cn/#sources)
 
-[*Deep Reinforcement Learning for General Video Game AI* published at IEEE CIG2018](https://arxiv.org/abs/1806.02448)
+[*Deep Reinforcement Learning for General Video Game AI*](https://arxiv.org/abs/1806.02448) published at IEEE CIG2018
 
 # References
 
