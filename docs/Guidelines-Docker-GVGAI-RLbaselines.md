@@ -134,7 +134,7 @@ docker build . -t <image_name>
    - Tests the environment by using pytest runner:
      - CPU version: 
   
-        `docker run -w /package/GVGAI_GYM --rm <image_name> pytest`
+        `docker run -w /app/GVGAI_GYM --rm <image_name> pytest`
 
      - GPU version: 
         
