@@ -34,7 +34,7 @@ Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/G
 # Requirements
 * **Anaconda:**　The version published after 2019.10 is recomended 
 * **Java:**　JDK 9 is recommended
-* **Python:**　The version Python 3.3 is recomended. (**Python2 can't be used!!!**)
+* **Python:**　The version Python3 (3.6 or 3.7 are recomended) is acceptable. (**Python2 can't be used!!!**)
 
 # Contributing
 
