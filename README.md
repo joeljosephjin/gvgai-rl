@@ -16,8 +16,10 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 }
 ```
 
-# GVGAI Learning Competition in 2019
-TBU
+# GVGAI Learning Competition in 2020
+
+Two competition legs at IEEE CoG2020 and PPSN2020:
+http://www.aingames.cn/gvgai/ppsn_cog2020
 
 # Installation
 
