@@ -32,9 +32,9 @@ Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/G
   * Run ```pip install -e <package-location>``` to install the package
   * Install a Java compiler(e.g. ```sudo apt install openjdk-9-jdk-headless```)
 # Requirements
-* **Anaconda:**　The version published after 2019.10 is recomended
+* **Anaconda:**　The version published after 2019.10 is recomended 
 * **Java:**　JDK 9 is recommended
-* **Python:**　The version Python 3.3 is recomended
+* **Python:**　The version Python 3.3 is recomended. (**Python2 can't be used!!!**)
 
 # Contributing
 
