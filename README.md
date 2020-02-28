@@ -27,14 +27,14 @@ http://www.aingames.cn/gvgai/ppsn_cog2020
 
 Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/docs/Guidelines-Docker-GVGAI-RLbaselines.md) for setting up the framework and RL baselines with Docker (using GPU or CPU only).
 
-**Way 2:** 
+**Way 2: git clone** 
   * Clone this repository to your local machine
   * Run ```pip install -e <package-location>``` to install the package
   * Install a Java compiler(e.g. ```sudo apt install openjdk-9-jdk-headless```)
 # Requirements
-* Anaconda: The version published after 2019.10 is recomended
-* Java: JDK 9 is recommended
-* Python: The version Python 3.3 is recomended
+* **Anaconda:**　The version published after 2019.10 is recomended
+* **Java:**　JDK 9 is recommended
+* **Python:**　The version Python 3.3 is recomended
 
 # Contributing
 
