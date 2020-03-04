@@ -21,6 +21,10 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 Two competition legs at IEEE CoG2020 and PPSN2020:
 http://www.aingames.cn/gvgai/ppsn_cog2020
 
+# Latest Updates
+
+* **2020.3.4:**  the map of **level1** in game waterpuzzle has been changed to the same size as **level0**
+
 # Installation
 
 **Way 1: using Docker**
@@ -31,7 +35,9 @@ Please refer to the step-by-step [guidelines](https://github.com/SUSTechGameAI/G
   * Clone this repository to your local machine
   * Run ```pip install -e <package-location>``` to install the package
   * Install a Java compiler(e.g. ```sudo apt install openjdk-9-jdk-headless```)
+  
 # Requirements
+
 * **Anaconda:**　The version published after 2019.10 is recomended 
 * **Java:**　JDK 9 is recommended
 * **Python:**　The version Python3 (3.6 or 3.7 are recomended) is acceptable. (**Python2 can't be used!!!**)
