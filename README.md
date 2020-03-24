@@ -21,9 +21,11 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 Two competition legs at IEEE CoG2020 and PPSN2020:
 http://www.aingames.cn/gvgai/ppsn_cog2020
 
-# Latest Updates
+# Latest Updates 
 
-* **2020.3.4:**  the map of **level1** in game waterpuzzle has been changed to the same size as **level0**
+* **2020.3.24:**  We have fixed a bug in the game logic file [treasurekeeper.txt](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/gym_gvgai/envs/games/treasurekeeper_v0/treasurekeeper.txt) . Please use the newly updated version. 
+* **2020.3.4:**   The map of **level1** in game waterpuzzle has been changed to the same size as **level0**
+
 
 # Installation
 
