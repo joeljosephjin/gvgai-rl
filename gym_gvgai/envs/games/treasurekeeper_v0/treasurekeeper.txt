@@ -24,19 +24,20 @@ BasicGame
         w > wall
         . > floor
         T > floor timer
-    InteractionSet
         
+    InteractionSet 
         movable wall EOS  > stepBack
         treasure thief > killSprite
         thief   box    > stepBack
-        thief thief    > stepBack
-        avatar treasure > stepBack
-        avatar thief   > killSprite
-        box    avatar  > bounceForward
-        box    box     > undoAll
-        box    wall treasure  thief > undoAll
-        wall   box     > undoAll
-        avatar TIME > undoAll timer=100 repeating=true scoreChange=5
+        thief  thief    > stepBack
+        avatar treasure  > stepBack
+        box    avatar    > bounceForward 	
+        box    thief     > undoAll notStype=monsterQuick,monsterNormal,monsterSlow
+        box    wall treasure box > undoAll notStype=monsterQuick,monsterNormal,monsterSlow
+        wall   box       > undoAll notStype=monsterQuick,monsterNormal,monsterSlow,avatar
+        avatar thief     > killSprite	
+        avatar TIME      > undoAll  notStype=monsterQuick,monsterNormal,monsterSlow   timer=100 repeating=true scoreChange=5
+        
     TerminationSet
         Timeout limit=600                  win=True
         SpriteCounter stype=treasure limit=0 win=False
