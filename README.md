@@ -21,6 +21,13 @@ Please refer to the paper [Deep Reinforcement Learning for General Video Game AI
 Two competition legs at IEEE CoG2020 and PPSN2020:
 http://www.aingames.cn/gvgai/ppsn_cog2020
 
+## Current progress: Performance of some baseline RL agents
+TODO
+
+## Performance of some baseline planning agents giving a forward model
+*See how well a planning agent performs in these games!*
+TODO 
+
 # Latest Updates 
 
 * **2020.3.24:**  We have fixed a bug in the game logic file [treasurekeeper.txt](https://github.com/SUSTechGameAI/GVGAI_GYM/blob/master/gym_gvgai/envs/games/treasurekeeper_v0/treasurekeeper.txt) . Please use the newly updated version. 
