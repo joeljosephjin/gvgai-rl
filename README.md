@@ -22,11 +22,31 @@ Two competition legs at IEEE CoG2020 and PPSN2020:
 http://www.aingames.cn/gvgai/ppsn_cog2020
 
 ## Current progress: Performance of some baseline RL agents
-TODO
+
+ |game-level\ RL agents | DQN | A2C | PPO2|
+ | :-----: | :-----: | :-----: | :-----: |
+ |waterpuzzle-lvl0    | 0    |   0.5 | 0     |
+ |waterpuzzle-lvl1    | 0    |   1   | 0     |
+ |treasurekeeper-lvl0 | 30   |   2.5 | 17    |
+ |treasurekeeper-lvl1 | 2.25 |   2   | 0.75  |
+ |golddigger-lvl0     | -1.7 |  15.9 | -2.9  |
+ |golddigger-lvl1     | 0    |  8.15 | -3.25 |
+
+Table 1: Average score of different RL agents on each game level
 
 ## Performance of some baseline planning agents giving a forward model
-*See how well a planning agent performs in these games!*
-TODO 
+
+ |game-level\ Planing agents | RS | RHEA | MCTS | OLETS | Random 
+ | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
+ |waterpuzzle-lvl0    | 5.5    |   6.5   | 8.5     | 15    | 3.5  |
+ |waterpuzzle-lvl1    | 4.75   |   4.75  | 6.75    | 11    | 2.5  |
+ |treasurekeeper-lvl0 | 2.25   |   2.4   | 2.35    | 0.45  | 0.75 |
+ |treasurekeeper-lvl1 | 1.75   |   2     | 1       | 0     | 0.75 |
+ |golddigger-lvl0     | 149.6  |  130    | 154     | 164.6 | 4.8  |
+ |golddigger-lvl1     | 64.9   |  61.5   | 67.4    | 88.9  | 8.2  |
+
+Table 2: Average score of different [planning agents](https://github.com/rubenrtorrado/GVGAI_GYM/tree/master/gym_gvgai/envs/gvgai/src/tracks/singlePlayer/advanced) 
+on each game level
 
 # Latest Updates 
 
