@@ -41,6 +41,8 @@ class GVGAI_Env(gym.Env):
         #Get number of moves for a selected game
         self.action_space = spaces.Discrete(len(self.actions))
 
+        self.img = self.img[:,:,2]
+
         # Observation is the remaining time
         self.observation_space = spaces.Box(low=0, high=255, shape=self.img.shape, dtype=np.uint8)
         
@@ -64,6 +66,10 @@ class GVGAI_Env(gym.Env):
                 info["winner"] == PLAYER_LOSES, PLAYER_WINS, NO_WINNER
         """
         state, reward, isOver, info = self.GVGAI.step(action)
+
+        state = state[:,:,2]
+
+        # print(state.shape)
         
         self.img = state
         return state, reward, isOver, info
@@ -79,7 +85,8 @@ class GVGAI_Env(gym.Env):
         return self.img
 
     def render(self, mode='human'):
-        img = self.img[:,:,:3]
+        img = self.img[:,:]
+        # img = self.img[:,:,:3]
         if mode == 'rgb_array':
             return img
         elif mode == 'human':
